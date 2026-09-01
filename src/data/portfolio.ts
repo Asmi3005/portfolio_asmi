@@ -17,9 +17,9 @@ export const site = {
   location: "India",
   title: "Asmi | Software Engineer",
   description:
-    "Portfolio of Asmi, a software engineer with experience at Apple and TVS Motor Company, working across backend systems, AI/ML, data engineering, and intelligent applications.",
+    "Portfolio of Asmi, a software engineer at Anvento IT Labs with experience at Apple and TVS Motor Company, working across full-stack development, backend systems, AI/ML, and intelligent applications.",
   profileImage: "/images/asmi-profile.png",
-  resumePath: "/resume/Asmi_Goyal_Resume.pdf",
+  resumePath: "/resume/Asmi_resume.pdf",
 };
 
 export const navLinks: NavLink[] = [
@@ -53,30 +53,30 @@ export const hero = {
   name: "Asmi",
   statement: "I build intelligent systems and scalable software.",
   description:
-    "Software engineer with experience at Apple and TVS Motor Company, building backend systems, AI-powered applications, data pipelines, and end-to-end software products.",
+    "Software engineer at Anvento IT Labs with experience at Apple and TVS Motor Company, building full-stack applications, backend systems, AI-powered products, and data pipelines.",
   primaryCta: { label: "View My Work", href: "#projects" },
   secondaryCta: {
     label: "Download Resume",
-    href: "/resume/Asmi_Goyal_Resume.pdf",
+    href: "/resume/Asmi_resume.pdf",
   },
 };
 
 export const about = {
   paragraphs: [
-    "I'm a Computer Science graduate from Thapar Institute of Engineering and Technology with software engineering experience at Apple and TVS Motor Company.",
-    "My work spans backend systems, microservices, data ingestion pipelines, LLM-assisted schema normalization, search and subscription matching, RAG-based applications, computer vision, and full-stack product development.",
-    "I’m interested in building practical end-to-end software across backend engineering, AI/ML, and data systems.",
+    "I'm a Computer Science graduate from Thapar Institute of Engineering and Technology, currently working as a Software Engineer at Anvento IT Labs with prior experience at Apple and TVS Motor Company.",
+    "My work spans full-stack product development, backend services, microservices, data ingestion pipelines, LLM-assisted schema normalization, search and subscription matching, RAG-based applications, and computer vision.",
+    "I'm interested in building practical end-to-end software across backend engineering, AI/ML, and data systems.",
   ],
 };
 
 export const highlights: Highlight[] = [
   {
     label: "Experience",
-    value: "Apple & TVS Motor Company",
+    value: "Anvento IT Labs, Apple & TVS",
   },
   {
     label: "Focus",
-    value: "Backend, AI/ML & Data Systems",
+    value: "Full-Stack, Backend & AI/ML",
   },
   {
     label: "Education",
@@ -86,15 +86,33 @@ export const highlights: Highlight[] = [
 
 export const experiences: ExperienceItem[] = [
   {
+    company: "Anvento IT Labs",
+    role: "Software Engineer",
+    location: "India",
+    duration: "August 2026 – Present",
+    bullets: [
+      "Ship end-to-end features for a production web platform, owning work across the full stack (React, JavaScript, Python, PostgreSQL) from requirements to deployment.",
+      "Partner directly with US-based clients to translate ambiguous business requirements into technical specs, driving feature prioritization and scoping conversations independently.",
+      "Build and maintain React and JavaScript frontend components alongside Python backend services, working with a PostgreSQL database hosted on AWS for UI logic and data persistence.",
+      "Drive code quality through active participation in code reviews and debugging, resolving production issues and improving platform stability.",
+    ],
+    technologies: [
+      "React",
+      "JavaScript",
+      "Python",
+      "PostgreSQL",
+      "AWS",
+    ],
+  },
+  {
     company: "Apple",
     role: "SDE Intern",
     location: "India",
     duration: "January 2026 – June 2026",
     bullets: [
-      "Built a centralized insights platform PoC consolidating data from 3 teams and 3 sources into a unified ingestion pipeline, with LLM-based field mapping for schema normalization and low-friction onboarding of new sources.",
-      "Designed an OpenSearch-based subscription matching system for multi-topic subscriptions, with notification triggering within seconds of data ingestion.",
-      "Containerized 7 microservices spanning ingestion, enrichment, subscription matching, and supporting services with Docker, covering streaming and batch workflows.",
-      "Improved local development consistency and reduced environment-specific setup issues across services.",
+      "Built a centralized insights platform PoC consolidating data from 3 teams and 3 sources into a unified ingestion pipeline, using LLM-based field mapping for schema normalization and low-friction onboarding of new sources.",
+      "Designed an OpenSearch-based subscription matching system for multi-topic subscriptions, with notifications triggered within seconds of ingestion — tested against sample data ahead of full-scale rollout.",
+      "Containerized 7 microservices spanning ingestion, enrichment, subscription matching, and supporting services with Docker, covering streaming and batch workflows and improving development environment consistency.",
     ],
     technologies: [
       "Python",
@@ -111,8 +129,8 @@ export const experiences: ExperienceItem[] = [
     location: "India",
     duration: "June 2025 – July 2025",
     bullets: [
-      "Built an end-to-end RAG chatbot with LangChain and LangGraph, routing queries across 3 document sources and multiple query sub-types to the correct retrieval path.",
-      "Integrated local LLMs with semantic chunking and FAISS-based retrieval to preserve contextual coherence over naive fixed-size chunking.",
+      "Built an end-to-end RAG chatbot using LangChain and LangGraph, with conditional routing across 3 document sources and multiple query sub-types to direct each query to the correct retrieval path.",
+      "Integrated local LLMs with semantic chunking and FAISS-based retrieval, improving retrieval quality over naive fixed-size chunking by preserving contextual coherence across chunks.",
       "Developed a Chainlit UI with a FastAPI backend, improving response time by 60% and accuracy by 35%.",
     ],
     technologies: [
@@ -130,27 +148,25 @@ export const experiences: ExperienceItem[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Programming Languages",
-    skills: ["Python", "SQL", "C++", "C"],
-  },
-  {
-    title: "AI/ML & LLM Systems",
+    title: "Generative AI & LLM Systems",
     skills: [
       "LangChain",
       "LangGraph",
       "RAG",
-      "FAISS",
-      "Scikit-Learn",
-      "NLTK",
-      "OpenCV",
       "Prompt Engineering",
+      "FAISS",
     ],
+  },
+  {
+    title: "Programming Languages",
+    skills: ["Python", "SQL", "C++", "JavaScript"],
   },
   {
     title: "Backend & Infrastructure",
     skills: [
-      "FastAPI",
       "Docker",
+      "FastAPI",
+      "REST APIs",
       "MongoDB",
       "PostgreSQL",
       "OpenSearch",
@@ -158,8 +174,16 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Data & Analysis",
-    skills: ["Pandas", "NumPy", "PySpark", "Matplotlib", "Seaborn"],
+    title: "Machine Learning & Data",
+    skills: [
+      "Scikit-Learn",
+      "NLTK",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "PySpark",
+    ],
   },
   {
     title: "Web",
@@ -189,7 +213,7 @@ export const projects: ProjectItem[] = [
   {
     name: "Face Anonymization Tool",
     description:
-      "Full-stack privacy tool that detects and anonymizes faces in real time across images, videos, and webcam streams using MediaPipe and OpenCV, with blur, pixelate, blackout, and emoji modes plus live preview and instant mode switching.",
+      "Full-stack privacy tool that detects and anonymizes faces in real time across images, videos, and webcam streams using MediaPipe and OpenCV, with blur, pixelate, blackout, and emoji modes, live preview, and instant toggling via a FastAPI backend and HTML/CSS/JavaScript frontend.",
     technologies: [
       "Python",
       "OpenCV",
@@ -205,7 +229,7 @@ export const projects: ProjectItem[] = [
   {
     name: "Medibot",
     description:
-      "Interactive medical Q&A chatbot that classifies predefined medical query intents and falls back to a Mistral LLM for out-of-scope questions, with a FastAPI backend and Streamlit frontend for local end-to-end use. Not a substitute for professional medical advice.",
+      "Interactive medical chatbot that handles predefined medical query intents using intent classification, with a Mistral LLM fallback for out-of-scope questions. Built with a FastAPI backend and Streamlit frontend for local end-to-end use. Not a substitute for professional medical advice.",
     technologies: [
       "Python",
       "FastAPI",
@@ -239,7 +263,7 @@ export const leadership: LeadershipItem = {
 };
 
 export const contactIntro =
-  "I'm currently exploring opportunities in software engineering, backend engineering, AI/ML, and data engineering. Feel free to reach out if you'd like to discuss an opportunity or connect.";
+  "Feel free to reach out if you'd like to connect, discuss an opportunity, or learn more about my work.";
 
 export const contact: ContactInfo = {
   email: "asmigoyal30@gmail.com",

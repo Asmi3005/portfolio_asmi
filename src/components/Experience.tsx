@@ -48,16 +48,18 @@ export function Experience() {
                     ))}
                   </ul>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {job.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-md border border-border bg-bg/50 px-2.5 py-1 text-xs font-medium text-muted"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                  {job.technologies.length > 0 ? (
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {job.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-md border border-border bg-bg/50 px-2.5 py-1 text-xs font-medium text-muted"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
                 </article>
               </li>
             </FadeIn>

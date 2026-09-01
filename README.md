@@ -23,7 +23,7 @@ npm start
 Place assets at:
 
 - `public/images/asmi-profile.jpg` — profile photo
-- `public/resume/Asmi_Goyal_Resume.pdf` — resume PDF
+- `public/resume/Asmi_resume.pdf` — resume PDF
 
 ## Deploy to Vercel
 
